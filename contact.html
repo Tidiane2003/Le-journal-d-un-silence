@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Le journal d'un silence</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/script.js"></script>
+</head>
+<body class="dark-theme">
+  <header>
+    <h1>Contact</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="oeuvres.html">Œuvres</a></li>
+        <li><a href="auteur.html">À propos</a></li>
+        <li><a href="extraits.html">Extraits</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact-form">
+      <form action="php/contact.php" method="POST">
+        <label for="name">Nom</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit" class="btn">Envoyer</button>
+      </form>
+      <p class="info">
+        Vous pouvez également me suivre sur <a href="https://www.instagram.com" target="_blank">Instagram</a> ou <a href="https://www.tiktok.com" target="_blank">TikTok</a>.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Le journal d'un silence — Cheikh Tidiane Mbow</p>
+  </footer>
+</body>
+</html>
